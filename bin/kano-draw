@@ -8,9 +8,10 @@
 # The Draw App implementation
 #
 
-# Before loading anything else, declare a profiling timepoint                                                      
+# Before loading anything else, declare a profiling timepoint
 from kano.profiling import declare_timepoint
-declare_timepoint("load",True)
+
+declare_timepoint("load", isStart=True)
 
 import os
 import sys
@@ -50,4 +51,7 @@ if len(sys.argv) > 1:
     DRAW = Draw(load_path=sys.argv[1])
 else:
     DRAW = Draw()
+declare_timepoint("load", isStart=False)
+declare_timepoint("run", isStart=True)
 DRAW.run()
+declare_timepoint("run", isStart=False)
