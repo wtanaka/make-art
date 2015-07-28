@@ -1,25 +1,26 @@
-.summer-camp: .page-width
+div(ng-controller="SummerCampController")
+  .summer-camp: .page-width
 
-    h3.page-title
-        i.icon-menu
-        | Summer Camp
+      h3.page-title
+          i.icon-menu
+          | Summer Camp
+      
+      a.button(ng-click='doSmth()') Register
+      a.button.right(href='/summer-camp/calendar') View Calendar
 
-    a.button(ng-click='register = true') Register
-    a.button.right(href='/summer-camp/calendar') View Calendar
-
-.modal-overlay(ng-if='register')
-    .modal-inner.modal-register.center
-
-        button.close(ng-click='closeModal()'): i.icon-cross
-
-        .register-form
-
-            h3 Register For Summer Camp
-
-            input.block(type='text' placeholder='Enter your email address')
-
-            input.block(type='text' placeholder='Enter your kid\'s email address')
-
-            input.block(type='text' placeholder='Enter your kid\'s username')
-
-            a.button.button-success Register
+  .modal-overlay(ng-if='summerCampLogin'): .modal-inner.modal-register.center
+    button.close(ng-click='closeModal(\'summerCampLogin\')'): i.icon-cross
+    .register-form
+      h3 Authentication
+      hr
+      h4 You must Login and Authorize the Summer Camp before taking part of it!
+      hr
+      a.button.button-success(ng-click='logIn()') Login and Authorize
+  .modal-overlay(ng-if='successLogin'): .modal-inner.modal-register.center
+    button.close(ng-click='closeModal(\'successLogin\')'): i.icon-cross
+    .register-form
+      h3 Success!
+      hr
+      h4 Congrats! You have successfully registered for the Summer Camp Challanges. Have fun completing them!
+      hr
+      a.button.button-success(ng-click='') Share
