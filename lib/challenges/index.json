@@ -47,7 +47,6 @@
             "description": "This is a Halloween dedicated world",
             "cover": "world_covers/mischiefweek",
             "world_path": "worlds/mischiefweek2015",
-            "start_date": "2015-10-26T06:00:00",
             "css_class": "mischiefweek2015",
             "type": "campaign"
         }
