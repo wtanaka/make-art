@@ -1,7 +1,8 @@
 .modal-overlay(ng-if='open'): .modal-inner.export-menu
 
     button.close(ng-click='close()') &times;
-    h2.center {{ action }} drawing
+    h2.center(ng-if='!creation') {{ action }} drawing
+    h2.center(ng-if='creation') Now share with your friends!
 
     .row
 
@@ -14,8 +15,10 @@
             .col-6
                 input.filename(ng-model='meta.title', placeholder='Title', type='text', required)
                 textarea.description(ng-model='meta.description', placeholder='Description')
+                input.email(ng-if='creation' ng-model='creation.email' placeholder='Enter an email address')
+                input.name(ng-if='creation' ng-model='creation.name' placeholder='Your name')
 
-                .buttons
+                .buttons(ng-if='!creation')
 
                     if offline
                         button.export-wallpaper(ng-click='exportWallpaper()', ng-disabled='exportForm.$invalid', ng-class='{ "disabled" : exportForm.$invalid }') Save Wallpaper
@@ -27,12 +30,17 @@
                     button.button-success(type='submit', ng-disabled='exportForm.$invalid', ng-class='{ "disabled" : exportForm.$invalid }' ng-if='category')
                         span Share &amp; Continue
 
-                    //- a.button.button-email(ng-click='sendMail()')
-                    //-     img(src='/assets/button-icons/email.png' title='Share via Email')
+                .buttons(ng-if='creation')
 
-                    //- a.button.button-facebook(ng-click='facebookShare()')
-                    //-     img(src='/assets/button-icons/facebook-white.png' title='Share on Facebook')
+                    a.button.button-email(ng-click='sendMail(creation)' href='#')
+                        span Send Mail
+
+                    a.button.button-facebook(ng-click='facebookShare(creation)' href='#')
+                        img(src='/assets/button-icons/facebook-white.png' title='Share on Facebook')
 
                     
-                    //- a.button.button-twitter(target='_new', type="button", href="https://twitter.com/intent/tweet?text=I%E2%80%99ve+signed+up+to+start+hacking+challenges+with+code+for+%23MischiefWeek%21+http://www.kano.me/mischiefweek")
-                    //-     img(src='/assets/button-icons/twitter-white.png' title='Share on Twitter')
+                    a.button.button-twitter(target='_new', type="button", ng-href="{{ buildTwitterURL(creation) }}")
+                        img(src='/assets/button-icons/twitter-white.png' title='Share on Twitter')
+
+    a.button.button-primary.center(ng-if='creation' ng-click='closeSocial()')
+        span Continue
