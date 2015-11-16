@@ -52,6 +52,17 @@
             "type": "campaign",
             "share_strategy": "mandatory",
             "sales_popup_after": 2
+        },
+        {
+            "id": "thankyoucards",
+            "name": "Thank You cards",
+            "description": "Create a card to thank who sent you the kit",
+            "cover": "world_covers/mischiefweek",
+            "world_path": "worlds/thankyoucards",
+            "start_date": "2015-11-13T06:00:00",
+            "css_class": "basic-challenges",
+            "type": "campaign",
+            "share_strategy": "mandatory"
         }
     ]
 }

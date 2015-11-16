@@ -1,0 +1,19 @@
+{
+    "id": "challenge_3",
+    "title": "Pack your things",
+    "short_title": "Challenge 3",
+    "icon_class": "challenge_camera",
+    "description": "description",
+    "cover": "summercamp/day_10.png",
+    "completion_text": "Completion text",
+    "thankYouCard": true,
+    "difficulty": 1,
+    "startAt": 0,
+    "rewards": null,
+    "steps": [
+        {
+            "hint": "It's a beautiful day to go for a walk in the forest - **type** `background blue`",
+            "solution": "background blue"
+        }
+    ]
+}
