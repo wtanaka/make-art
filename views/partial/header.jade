@@ -1,6 +1,8 @@
 header: .page-width
 
     a.logo(href='/')
+    //- if !offline
+    //-     a.kano-logo(href='http://www.kano.me', target='_blank')
 
     ul.nav.nav-left
 
@@ -28,3 +30,5 @@ header: .page-width
             |  Logout
 
         li: button.close(ng-click='shutdown()', ng-if='offline'): i.icon-cross
+
+include banner
