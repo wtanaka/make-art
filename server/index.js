@@ -4,7 +4,7 @@ var express = require('express'),
     path = require('path');
 
 var app = express(),
-    port = process.env.PORT || 3000;
+    port = process.env.PORT || 80;
 
 app.use(logger);
 

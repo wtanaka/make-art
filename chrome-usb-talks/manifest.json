@@ -1,0 +1,29 @@
+{ "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAml7u6zt5BOrPyZXRJLYCnMJK8sN4rxGqTALICd+GmE7tZvunTtFX11N5iyKrc4/OxqJeHJZIH8PUon25KMmbr/TuqpJyd5/F0UbwVZwflbLWpZwOUk8h2U3oeBVzuwLL+yacNJZUxudEsLzoxHlFnrlK3GotDXRYEeXEkwBHHERhGyHIjGknXQQftPUNUcbzf21mk7hQPojoaXUvJwspeLhPseT6Cp8d2c3I2XBZbb6HVO0FYdOKfoCaG6cPqsrYGFrdIfr6nKTMQbTAFqba9tfl+J+Psje4hn7tbpSrvCV3r+NV4fJn8cu0oNTUguxLmR1vuDTGXbf0MQAH7T8SbQIDAQAB",
+  "name": "Kano Connect",
+  "manifest_version": 2,
+  "version": "0.3",
+  "minimum_chrome_version": "39.0.2140.0",
+  "app": {
+    "background": {
+      "scripts": [ "main.js" ]
+    }
+  },
+  "icons": {
+    "16": "16.png",
+    "128": "128.png"
+  },
+  "permissions": [
+    "http://*.kano.me/",
+    "hid",
+    {
+      "usbDevices": [
+        { "vendorId": 10168, "productId": 493 }
+      ]
+    }
+  ],
+
+  "externally_connectable": {
+    "ids": "*",
+    "matches": ["*://*.kano.me/*"]
+  }
+}
