@@ -14,12 +14,8 @@
   },
   "permissions": [
     "http://*.kano.me/",
-    "hid",
-    {
-      "usbDevices": [
-        { "vendorId": 10168, "productId": 493 }
-      ]
-    }
+    "serial",
+    "usb"
   ],
 
   "externally_connectable": {
