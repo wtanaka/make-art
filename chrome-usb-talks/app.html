@@ -42,9 +42,11 @@
 		min-height: 30px;
 		padding: 10px;
 		color: white;
+		height: 220px;
+    	overflow-y: auto;
 	}
 
-	#connect-device {
+	.btn {
 	    display: block;
 	    margin: 20px auto;
 	    border-radius: 5px;
@@ -57,6 +59,19 @@
 	    font-weight: bold;
 	    padding: 10px 0 0px 0;
 	}
+	#control-panel, #connection-mgmt {
+		padding: 0;
+		width: 49%;
+		margin: 0;
+		float: left;
+	}
+	#connection-mgmt {
+		height: 500px;
+	}
+	.container {
+		border: 1px solid black;
+		border-radius: 5px;
+	}
 
 	</style>
 </head>
@@ -67,12 +82,18 @@
 	<div id="title">
 		<h1>KANO Connect</h1>
 	</div>
-		
-	<p>Click on connect device to connect</p>
-	<div id="console">
-		<b>Console</b><br/>
+	<div class="container" id="connection-mgmt">
+		<h2>Connections</h2>
+
 	</div>
-	<a href="#0" id='connect-device'>Connect Device</a>
+	<div class="container" id="control-panel">
+		<p>Click on connect device to connect</p>
+		<div id="console">
+			<b>Console</b><br/>
+		</div>
+		<a href="#0" class="btn" id='connect-device'>Connect Device</a>
+		<a href="#0" class="btn" id='send-signal'>Send Signal</a>
+	</div>
 </body>
 	<script type="text/javascript" src="script.js" ></script>
 
