@@ -24,21 +24,14 @@
 
     .actions
 
-        a.action.action-share(ng-if='mode === "playground" || sharing', ng-click='setOpenModal("share")')
-            i.icon-share
-            |  Share
-
-        a.action.action-save(ng-if='mode === "playground"', ng-click='save()')
-            i.icon-save
-            |  Save
-
-        a.action.action-reset(ng-if='mode === "challenge"', ng-click='resetCode()')
-            i.icon-reset
-            |  Reset
-
-        .action.action-load(ng-show='mode === "playground"')
+        .action.action-load(ng-show='false')
             i.icon-arrow-up
             |  Load
+            input.file-load(type='file', accept='.draw')
+
+        a.action.action-load(ng-click="makeItReal()")
+            i.icon-arrow-up
+            |  Make
             input.file-load(type='file', accept='.draw')
 
         export-modal(display='this', action='"save"')
