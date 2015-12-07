@@ -23,3 +23,12 @@
                 workspace,
                 mode='"playground"'
                 )
+
+    .popup-discover(ng-if='blade_available && blade_popup_open')
+        h4 Device connected
+        P You just connected <br> 
+        p 
+            strong {{ display_name }} 
+            | produced by 
+            strong {{ producer }}
+        button(ng-click="closePopup()") Close
