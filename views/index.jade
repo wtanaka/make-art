@@ -62,7 +62,9 @@ html(lang='en',  xmlns:ng="http://angularjs.org")
                 CHALLENGES_URL  : '#{challenges_url}',
                 TEST_MODE       : #{testmode},
                 ENV             : '#{env}'
+    
             };
+            window.LIGHTSERVER = "http://172.16.6.223:8000";
 
         //- App
         script(src='/js/index.js', type='text/javascript')
