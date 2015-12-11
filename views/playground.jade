@@ -1,8 +1,10 @@
 .page-width: .workspace
-    h3.page-title
-        i.icon-game
-        | Playground
-
+    .row 
+        .col-1
+        .col-11
+            .message-box
+                input(id='message-box' ng-model='playground.lb_message' type='text' maxlength=140 width=140 placeholder='send a message to the lightboard')
+                button(type='button' id='message-box-send' ng-click='sendMessage()') Send
     .workspace-body: .row
 
         .col-6
@@ -32,3 +34,5 @@
             | produced by 
             strong {{ producer }}
         button(ng-click="closePopup()") Close
+
+
