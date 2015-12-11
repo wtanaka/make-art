@@ -1,7 +1,10 @@
 .page-width: .workspace
     .row 
         .col-1
-        .col-11
+        .col-3 
+            button(type='button' ng-click='allOn()') ALL ON
+            button(type='button' ng-click='allOff()') ALL OFF
+        .col-8
             .message-box
                 input(id='message-box' ng-model='playground.lb_message' type='text' maxlength=140 width=140 placeholder='send a message to the lightboard')
                 button(type='button' id='message-box-send' ng-click='sendMessage()') Send
