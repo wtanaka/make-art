@@ -38,6 +38,65 @@
                 
         .header
             bg-image("pixelhack/pixelhack-header", 100% 160px, false, no-repeat)
+            display(flex)
+            justify-content(flex-end)
+            
+            .updates-form
+                background-color rgba(color-black, .6)
+                display(flex)
+                align-items(flex-start)
+                flex-direction(column)
+                width 300px
+                padding 20px
+                
+                h4
+                    text-transform uppercase
+                    font-weight bold
+                    margin-top 15px
+                    margin-bottom 5px
+                    font-size 18px
+                    smooth-font()
+                
+                form
+                    display(inline-flex)
+                    margin 0
+                    width 100%
+                
+                    input, button
+                        background none
+                        color white
+                        border 1px solid darken(color-white, 20)
+                        margin 0
+                        padding 12px 10px
+                        font-weight bold
+                        smooth-font()
+                    
+                    input
+                        border-radius(3px 0 0 3px)
+                        outline none
+                        flex(70)
+                        font-family 'Bariol', sans-serif
+                        font-size 16px
+                    
+                    button
+                        border-left none
+                        border-radius(0 3px 3px 0)
+                        flex(30)
+                        color color-white
+                        font-size 12px
+                
+                .error, .success
+                    align-self(center)
+                    border-radius(3px)
+                    padding 7px 15px
+                    margin-top 5px
+                    font-size 14px
+                
+                .error
+                    background-color color-red    
+                    
+                .success
+                    background-color color-green
     
     &.mischiefweek2015
         .image            
@@ -262,109 +321,18 @@
 
                     .cover
                         background-color #46ddeb
-
-.modal-challenge-info
-    top 50px
-    width 480px
-    margin-left -240px
-    padding 0
-
-    h3, p
-        text-transform none
-
-    h3
-        smooth-font()
-        font-weight bold
-        margin-bottom 5px
-
-    p
-        font-size 18px
-
-    .cover
-        min-height 400px
-        background-size cover
-        background-position center center
-
-    .detail
-        padding 30px
-
-.modal-mail-preview
-    top 50px
-    width 500px
-    margin-left -250px
-    padding 0
-    
-    .preview
-        height auto
-        width 100%
-        box-sizing border-box
-        background-color color-grey-lighter
-        padding-bottom 20px
-        border-radius(5px)
+                        
+.certificate
+    .modal-inner
+        top 150px
         
-        .header
-            padding 20px 0
-            background-color color-header
-            color white
-            text-transform none
-            font-weight bold
-            font-size 24px
-            smooth-font()
-            width 100%
-            
-        h4
-            smooth-font()
-            font-weight bold
-            margin 10px 0
-            text-transform none
-            
-        .content
-            padding 0 20px
-            display(flex)
-            flex-direction(row)
-            flex-wrap(nowrap)
-            justify-content(space-between)
-            
-            .left-content
-                flex 60
-                input, textarea
-                    display block
-                    margin 0 0 10px
-                    padding 12px 10px
-                    width 100%
-                    background color-white
-                    border 1px solid color-ruler
-                    box-sizing border-box
-                    box-shadow 0 1px 0 0 rgba(#000, .1) inset
-                    border-radius(5px)
-                    font-family font-body
-                    font-size 16px
-                    font-weight bold
-                    smooth-font()
-                    
-                    &:focus
-                        border 1px solid color-primary
-                        outline 0
-                
-                textarea
-                    height 150px
-                    resize none
-                    
-            .right-content
-                flex 35
-                margin-left 20px
-                .pic
-                    margin-bottom 65px
-                    img
-                        width 150px
-                        height 150px
-                .button-success
-                    padding 12px 60px
-                    border-radius(5px)
-                    
-                .disabled
-                    background-color color-grey-lighter
-                    color color-grey
+        .cover
+            background-image url('/assets/pixelhack/cert-modal.png')
+            background-size 100%
+            background-position center center
+            background-repeat no-repeat
+            min-height 200px
+
 
 placeholder()
     color mix(color-grey-light, color-grey-lighter, 70%)

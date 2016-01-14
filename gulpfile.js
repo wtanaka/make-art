@@ -18,6 +18,7 @@ var gulp = require('gulp'),
     production = env === 'production',
     segmentioId = process.env.SEGMENTIO_ID || null,
     facebookAppId = process.env.FACEBOOK_APP_ID || null,
+    unknown_user = process.env.UNKNOWN_USER || null,
     mailServer = process.env.MAILSERVER || null,
     api_url = process.env.API_URL || null,
     world_url = process.env.WORLD_URL || null,
@@ -76,7 +77,8 @@ gulp.task('views', function () {
             api_url         : api_url,
             world_url       : world_url,
             testmode        : testmode,
-            challenges_url  : "/assets/challenges/descriptors"
+            challenges_url  : "/assets/challenges/descriptors",
+            unknown_user    : unknown_user
         }, jadeHelpers)
     }))
     .on('error', handleError)
@@ -93,7 +95,23 @@ gulp.task('apify-challenges', ['copy-challenges'], function (next) {
     var index,
         worldsNum,
         //fields that are copied from ./index.json to /world/<world>/index.json
-        copyWorldFields = ['id', 'name', 'description', 'world_path', 'cover', 'css_class', 'visibility', 'dependency', 'type', 'share_strategy', 'sales_popup_after'],
+        copyWorldFields = [
+            'id',
+            'name',
+            'description',
+            'world_path',
+            'cover',
+            'css_class',
+            'visibility',
+            'dependency',
+            'type',
+            'share_strategy',
+            'sales_popup_after',
+            'certificate_after',
+            'teachers_guide',
+            'updateForm',
+            'socialText'
+        ],
         countNext = 0,
         formattedIndex;
     function localNext() {
