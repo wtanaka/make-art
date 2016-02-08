@@ -9,7 +9,7 @@ document.getElementsByTagName('body')[0].appendChild(script)
 
 # Draw image
 bg = document.createElement('img')
-bg.src = 'http://www.wired.com/wp-content/uploads/2015/09/Opendesk_Kano_Demo-table-for-school-groups-1024x576.jpg'
+bg.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Ellen_H._Swallow_Richards_House_Boston_MA_01.jpg'
 
 drawBackground = ->
     ctx.drawImage(bg, -190 * dpr, 0, 1024 * dpr * .9, 576 * dpr * .9)
