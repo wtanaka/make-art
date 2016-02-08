@@ -7,13 +7,30 @@ script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'
 script.type = 'text/javascript'
 document.getElementsByTagName('body')[0].appendChild(script)
 
+bg = ''
+sh_im = ''
+inner_temperature = 0
+response = ''
 # Draw image
-bg = document.createElement('img')
-bg.src = 'http://www.wired.com/wp-content/uploads/2015/09/Opendesk_Kano_Demo-table-for-school-groups-1024x576.jpg'
 
 drawBackground = ->
+    bg = document.createElement('img')
+    bg.src = sh_im
     ctx.drawImage(bg, -190 * dpr, 0, 1024 * dpr * .9, 576 * dpr * .9)
-    #ctx.drawImage(bg, -200 , 0, 1.75 * 1024, 1.75 * 576)
+    moveTo 200,200
+    i = i+1
+
+retrieveImage = () ->
+    jQuery.getJSON('http://proto.local:8000/camera/lastpic',setImage)
+
+setImage = (e) ->
+    bg = document.createElement('img')
+    bg.src = 'http://proto.local:8000/' + e.image_URL
+    sh_im = bg.src  
+ 
+    ctx.drawImage(bg, -190 * dpr, 0, 1024 * dpr * .9, 576 * dpr * .9)
+    moveTo 200,200
+    
 
 # Weather types: rain, snow, thunder, cloudy, clear, extreme
 setupRain = ->
@@ -132,9 +149,14 @@ drawText = ->
     move 0, 50
     bold true
     font 25
-    text Math.round(response.responseJSON.main.temp - 273) + '° and ' + weatherType
+    text 'External: ' + Math.round(response.responseJSON.main.temp - 273) + '° and ' + weatherType
+    move 0, 50
+    if inner_temperature != 0
+        text 'Internal: ' + inner_temperature + '°'
 
 decideWeather = (e) ->
+    console.log 'decide weather'
+    bg.src = 'http://proto.local:8000/camera/last_pic_file.jpg' 
     switch e.weather[0].main
         when 'Rain' then do setupRain
         when 'Snow' then do setupSnow
@@ -143,13 +165,16 @@ decideWeather = (e) ->
         else do drawBackground
     console.log response
 
+getInternalTemperature = () ->
+    jQuery.getJSON('http://proto.local:8000/temperature/status', parseTemp)
 
-# This queries the open weather API:
-response = jQuery.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + query + '&APPID=1691a75f2882233290efe7dccf49459e',decideWeather
-)
+parseTemp = (e) ->
+    console.log e.temperature
+    inner_temperature = e.temperature
 
+getExternalTemperature = (query) ->
+    response = jQuery.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + query + '&APPID=1691a75f2882233290efe7dccf49459e',decideWeather)
 
-#setupSnow()
-#animateRain()
-#setupCloud()
-#animateThunder()
+getStreamingCamera = () ->
+    retrieveImage()
+    window.setInterval(retrieveImage, 5000)
