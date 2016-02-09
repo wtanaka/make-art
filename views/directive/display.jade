@@ -21,7 +21,7 @@
         
         .position-indicator
             i(ng-class="{'icon-mouse-pointer': mouse, 'icon-plus': !mouse}")
-            |  x: {{ coordsPosition.x }} y: {{ coordsPosition.y }}
+            |  
 
         a.action.action-share(ng-if='mode === "playground" || sharing', ng-click='setOpenModal("share")')
             i.icon-share
@@ -29,7 +29,7 @@
 
         a.action.action-save(ng-if='mode === "playground"', ng-click='save()')
             i.icon-save
-            |  Save
+            |  Remix
 
         a.action.action-reset(ng-if='mode === "challenge"', ng-click='resetCode()')
             i.icon-reset

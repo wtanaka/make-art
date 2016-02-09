@@ -1,21 +1,22 @@
-.page-width: .workspace
+.workspace
     .workspace-body: .row
+        h3 
+            b Weather app 
 
-        .col-6
-
-            editor(
-                ng-model='playground.code',
-                editable='true',
-                auto-select='false',
-                workspace,
-                tabbed='true',
-                controls='true'
-                )
-
-        .col-6
+            span by 
+                a luke
+        .col-12
 
             display(
                 source='playground.code',
                 workspace,
                 mode='"playground"'
                 )
+        .col-12
+            .project
+                h3 The Project
+                p Hi all, <br> This is my fantastic wheather  app I made using
+                ul 
+                    li Kano Kit
+                    li Kano Camera
+                    li Kano Explorer

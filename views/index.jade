@@ -30,14 +30,7 @@ html(lang='en',  xmlns:ng="http://angularjs.org")
 
         include partial/header
         ng-view
-        include partial/splash
 
-        if !offline
-            .kano-feedback-container(ng-click='isFeedbackSplashOpen = true', ng-init='feedbackLoaded()') 
-                span Feedback
-                .kano-feedback
-            include partial/feedback
-            include partial/auth-modal
         
 
         //- Vendor

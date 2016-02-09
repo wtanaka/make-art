@@ -21,11 +21,11 @@ drawBackground = ->
     i = i+1
 
 retrieveImage = () ->
-    jQuery.getJSON('http://proto.local:8000/camera/lastpic',setImage)
+    setImage()
 
 setImage = (e) ->
     bg = document.createElement('img')
-    bg.src = 'http://proto.local:8000/' + e.image_URL
+    bg.src = 'http://www.wired.com/wp-content/uploads/2015/09/Opendesk_Kano_Demo-table-for-school-groups-1024x576.jpg'
     sh_im = bg.src  
  
     ctx.drawImage(bg, -190 * dpr, 0, 1024 * dpr * .9, 576 * dpr * .9)
@@ -178,3 +178,6 @@ getExternalTemperature = (query) ->
 getStreamingCamera = () ->
     retrieveImage()
     window.setInterval(retrieveImage, 5000)
+
+getExternalTemperature('Milan')
+setImage()
