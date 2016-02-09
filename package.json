@@ -28,7 +28,7 @@
     "express": "^4.10.5",
     "griddy": "0.0.x",
     "gulp": "~3.5.x",
-    "gulp-browserify": "~0.4.x",
+    "gulp-browserify": "~0.5.x",
     "gulp-callback": "0.0.3",
     "gulp-jade": "~0.4.x",
     "gulp-livereload": "1.2.0",
@@ -42,6 +42,7 @@
     "nib": "~1.0.x",
     "partialify": "^3.1.1",
     "play-audio": "^0.1.0",
+    "q": "^1.4.1",
     "throttle-debounce": "^0.1.1",
     "tiny-lr": "0.0.9"
   },
