@@ -1,0 +1,25 @@
+{
+    "id": "makedata",
+    "title": "Make Data",
+    "cover": "make-data.png",
+    "description": "Bring your creations to life with real data: sports scores, weather, images and more.",
+    "steps": [
+        {
+            "hint": "We're going to build a weather app. Choose your location with `location = \"Palo Alto\"`",
+            "solution": "location = \"Palo Alto\""
+        },
+        {
+            "hint": "To pull in the weather, we are going to use the 'get' command. **Type** `weather = get \"weather\", location`",
+            "solution": "weather = get \"weather\", location"
+        },
+        {
+            "hint": "And lets get a background image using the same command, but this time getting an image. **Type** `background get \"image\", location`",
+            "solution": "background get \"image\", location"
+        },
+        {
+            "hint": "Next, set the font to 110 to make your city location nice and big.",
+            "solution": "font 110"
+        }
+    ],
+    "completion_text": "Awesome app! Change the location to wherever you want!"
+}

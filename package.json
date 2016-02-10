@@ -35,6 +35,7 @@
     "gulp-rename": "~0.2.x",
     "gulp-stylus": "^2.0.1",
     "http-server": "~0.6.x",
+    "jquery": "2.2.0",
     "kano-world-sdk": "2.1.1",
     "lodash": "~2.4.x",
     "marked": "~0.3.x",
