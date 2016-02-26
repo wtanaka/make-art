@@ -1,7 +1,7 @@
 {
     "id": "baloon",
     "title": "Blue Balloon",
-    "cover": "blue-baloon.png",
+    "cover": "potatoes.gif",
     "description": "Draw a balloon floating in the air using polygons!",
     "startAt": 2,
     "steps": [
