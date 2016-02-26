@@ -1,10 +1,21 @@
 {
     "worlds": [
         {
+            "id": "data",
+            "name": "Make Data",
+            "description": "Discover data while making your own interactive app",
+            "cover": "world_covers/sheldon.gif",
+            "world_path": "worlds/data",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
+            "type": "normal"
+
+        },
+        {
             "id": "basic",
             "name": "Basic",
             "description": "This is a first set of challenges which will make you started with Make-Art",
-            "cover": "world_covers/basic",
+            "cover": "world_covers/basic.png",
             "world_path": "worlds/basic",
             "css_class": "basic-challenges",
             "share_strategy": "last_only",
@@ -15,7 +26,7 @@
             "id": "medium",
             "name": "Medium",
             "description": "Medium challenges",
-            "cover": "world_covers/medium",
+            "cover": "world_covers/medium.png",
             "world_path": "worlds/medium",
             "css_class": "medium",
             "dependency": ["basic"],
@@ -26,7 +37,7 @@
             "id": "pixelhack",
             "name": "Pixel Hack",
             "description": "This is a group of challenges for the hour of code",
-            "cover": "world_covers/pixelhack",
+            "cover": "world_covers/pixelhack.png",
             "world_path": "worlds/pixelhack",
             "css_class": "pixelhack",
             "type": "campaign",
@@ -47,7 +58,7 @@
             "id": "summercamp",
             "name": "Summercamp",
             "description": "This is a first set of challenges which will make you started with Make-Art",
-            "cover": "world_covers/summercamp",
+            "cover": "world_covers/summercamp.png",
             "world_path": "worlds/summercamp",
             "css_class": "_summercamp",
             "dependency": ["medium"],
@@ -59,7 +70,7 @@
             "id": "mischiefweek2015",
             "name": "Mischief Week",
             "description": "This is a Halloween dedicated world",
-            "cover": "world_covers/mischiefweek",
+            "cover": "world_covers/mischiefweek.png",
             "world_path": "worlds/mischiefweek2015",
             "start_date": "2015-10-26T06:00:00",
             "css_class": "mischiefweek2015",
