@@ -26,7 +26,7 @@
             a.world-cover(
                 ng-href='{{!isWorldLocked(world) ? "/challenges/" + world.id : ""}}'
                 ng-class='{locked: isWorldLocked(world), completed: isWorldCompleted(world), current: isWorldCurrent(world)}'
-                ng-style='{ "background-image": "url(/assets/challenges/images/" + world.cover + ".png)" }'
+                ng-style='{ "background-image": "url(/assets/challenges/images/" + world.cover + ")" }'
                 )
 
                 h4 {{ world.name }} 
