@@ -149,6 +149,7 @@ gulp.task('apify-challenges', ['copy-challenges'], function (next) {
                     cover: challenge.cover,
                     index: index,
                     hasNext: hasNext,
+                    video: challenge.video,
                     start_date: challenge.start_date
                 };
             challenge.index = index ;

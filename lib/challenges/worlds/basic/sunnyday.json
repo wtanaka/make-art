@@ -19,5 +19,6 @@
         }
     ],
     "completion_text": "Well done! It's a bright and sunny day, now change the number next to circle and see what happens",
-    "cover": "sunny-day.png"
+    "cover": "sunny-day.png",
+    "video": "/assets/video/FunWithFlagsEp1.mp4"
 }
