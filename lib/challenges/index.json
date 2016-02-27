@@ -1,70 +1,80 @@
 {
     "worlds": [
         {
-            "id": "data",
-            "name": "Make Data",
-            "description": "Discover data while making your own interactive app",
-            "cover": "world_covers/sheldon.gif",
-            "world_path": "worlds/data",
+            "id": "weather",
+            "name": "Weather App",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/weather",
             "css_class": "basic-challenges",
             "share_strategy": "last_only",
             "type": "normal"
         },
         {
-            "id": "medium",
-            "name": "Medium",
-            "description": "Medium challenges",
-            "cover": "world_covers/medium.png",
-            "world_path": "worlds/medium",
-            "css_class": "medium",
-            "dependency": ["basic"],
-            "share_strategy": "optional",
-            "type": "normal"
-        },
-        {
-            "id": "pixelhack",
-            "name": "Pixel Hack",
-            "description": "This is a group of challenges for the hour of code",
-            "cover": "world_covers/pixelhack.png",
-            "world_path": "worlds/pixelhack",
-            "css_class": "pixelhack",
+            "id": "project2",
+            "name": "project2",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/project2",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
             "type": "campaign",
-            "certificate_after": 2,
-            "teachers_guide": "/guides/PixelHackEducatorGuide.zip",
-            "share_strategy": "optional",
-            "updateForm": {
-                "url": "https://docs.google.com/forms/d/1nTJ-waAVLQCO3myxKMDQLafL5Fnf9uTPtiejuH-74sY/formResponse",
-                "field": "entry.1965349241"
-            },
-            "socialText": {
-                "email": "Hack your way through video game history with Pixel Hack from Kano!",
-                "facebook": "Hack your way through video game history with #PixelHack from Kano",
-                "twitter": "Hack your way through video game history with #PixelHack from @TeamKano!\nhttp://art.kano.me/challenges/pixelhack/"
-            }
+            "start_date": "2015-12-07T06:00:00"
         },
         {
-            "id": "summercamp",
-            "name": "Summercamp",
-            "description": "This is a first set of challenges which will make you started with Make-Art",
-            "cover": "world_covers/summercamp.png",
-            "world_path": "worlds/summercamp",
-            "css_class": "_summercamp",
-            "dependency": ["medium"],
-            "share_strategy": "optional",
-            "type": "campaign"
-
-        },
-        {
-            "id": "mischiefweek2015",
-            "name": "Mischief Week",
-            "description": "This is a Halloween dedicated world",
-            "cover": "world_covers/mischiefweek.png",
-            "world_path": "worlds/mischiefweek2015",
-            "start_date": "2015-10-26T06:00:00",
-            "css_class": "mischiefweek2015",
+            "id": "project3",
+            "name": "project3",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/project3",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
             "type": "campaign",
-            "share_strategy": "optional",
-            "sales_popup_after": 2
+            "start_date": "2019-01-01T00:00:00"
+        },
+        {
+            "id": "project4",
+            "name": "project4",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/project4",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
+            "type": "campaign",
+            "start_date": "2019-01-01T00:00:00"
+        },
+        {
+            "id": "project5",
+            "name": "project5",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/project5",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
+            "type": "campaign",
+            "start_date": "2019-01-01T00:00:00"
+        },
+        {
+            "id": "project6",
+            "name": "project6",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/project6",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
+            "type": "campaign",
+            "start_date": "2019-01-01T00:00:00"
+        },
+        {
+            "id": "project7",
+            "name": "project7",
+            "description": "Discover data while making your own interactive weather app",
+            "cover": "world_covers/makedata.png",
+            "world_path": "worlds/project7",
+            "css_class": "basic-challenges",
+            "share_strategy": "last_only",
+            "type": "campaign",
+            "start_date": "2019-01-01T00:00:00"
         }
     ]
 }

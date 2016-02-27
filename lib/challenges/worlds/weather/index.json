@@ -1,0 +1,9 @@
+{
+    "challenges": [
+        "./get",
+        "./read",
+        "./show",
+        "./visualize",
+        "./umbrella"
+    ]
+}

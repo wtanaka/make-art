@@ -1,0 +1,14 @@
+{
+    "id": "baloon",
+    "title": "Blue Balloon",
+    "cover": "potatoes.gif",
+    "description": "Empty",
+    "startAt": 2,
+    "steps": [
+        {
+            "hint": "empty",
+            "solution": "null"
+		}
+    ],
+    "completion_text": "Empty"
+}

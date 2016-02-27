@@ -1,0 +1,18 @@
+{
+    "id": "get",
+    "title": "Get the Data",
+    "cover": "get.gif",
+    "description": "Get the Data",
+    "startAt": 2,
+    "steps": [
+        {
+            "hint": "Lets connect to weather stations around the world with the `get` command with the location input bar we have provided. **Type** `data = get 'weather', location`",
+            "solution": "data = get 'weather', location"
+        },
+        {
+            "hint": "The `data` variable we just made has all of the information we need stored in it. To see what's inside, **type** `dump data`",
+            "solution": "dump data"
+        }
+    ],
+    "completion_text": "Great! This might be messy, but the block of text you just spit out has all the information you'll need to make a great data app. In the next steps you'll see how to bend this to your will."
+}
