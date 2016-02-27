@@ -62,8 +62,23 @@ editor
         height 100%
         background color-editor-bg
         overflow hidden
-        padding 10px 0 0
+        padding 0
         box-sizing border-box
+
+        .triggerSelector
+            height 60px
+
+        select
+            font-size 1.3em
+            padding-left 20px
+            line-height 1
+            height 40px
+            width 100%
+            -webkit-appearance none
+            background url('/assets/button-icons/down.png') no-repeat right color-orange;
+            color color-white
+            border 0
+            font-weight 300
 
         &.has-title
             border-radius(0 0 3px 3px)
@@ -79,7 +94,7 @@ editor
             font-size 14px
             color color-white
             background transparent
-            min-height editor-height - 20px
+            min-height editor-height - 70px
             height 100%
 
             // Hide default ACE editor error icon (Since we handle errors in display directive)
@@ -105,7 +120,7 @@ editor
                 // width 20px !important
 
             .ace_gutter-active-line
-                // Disable active line state background 
+                // Disable active line state background
                 background transparent
 
             .ace_marker-layer .ace_selection
@@ -114,7 +129,7 @@ editor
             .ace_print-margin
                 background rgba(#fff, .2)
                 display none
-                
+
             .ace_content .ace_line
                 smooth-font()
 

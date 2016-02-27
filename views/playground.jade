@@ -9,7 +9,9 @@
                 auto-select='false',
                 workspace,
                 tabbed='true',
-                controls='true'
+                controls='true',
+                triggers='triggers'
+                selected-trigger='selectedTrigger'
                 )
 
         .col-6
@@ -17,5 +19,6 @@
             display(
                 source='playground.code',
                 workspace,
-                mode='"playground"'
+                mode='"playground"',
+                trigger='selectedTrigger'
                 )

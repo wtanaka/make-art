@@ -40,6 +40,7 @@
     "marked": "~0.3.x",
     "moment": "^2.10.6",
     "nib": "~1.0.x",
+    "p5": "^0.4.22",
     "partialify": "^3.1.1",
     "play-audio": "^0.1.0",
     "throttle-debounce": "^0.1.1",
