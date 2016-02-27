@@ -1,26 +1,23 @@
 header(ng-show="!appMode", ng-cloak): .page-width
 
-    a.logo(href='/')
+    a.logo(href='http://apps-world.kano.me')
     //- if !offline
     //-     a.kano-logo(href='http://www.kano.me', target='_blank')
 
-    ul.nav.nav-left
+    ul.nav.nav-right(ng-cloak)
+
+        li: a(href='http://apps-world.kano.me/shares')
+            |  Shares
+
 
         li: a(href='/challenges', ng-class='{ active: basePath === "challenge" || basePath === "challenges" }')
-            i.icon-menu
-            |  Challenges
+            |  Projects
 
         li: a(href='/playground', ng-class='{ active: basePath === "playground" }')
-            i.icon-game
             |  Playground
 
-    ul.nav.nav-right(ng-cloak)
-        li.discover: a(ng-if="!offline" id='discover-kano', href='http://www.kano.me', target='_blank')
-            i.icon-cpu
-            | Discover Kano
 
         li(ng-if='!offline && !loggedIn'): a(href='#', ng-click='auth.openModal()')
-            i.icon-login
             |  Login
         
 
@@ -30,7 +27,6 @@ header(ng-show="!appMode", ng-cloak): .page-width
                 | {{ user.username }}
 
         li(ng-if='!offline && loggedIn'): a(href='#', ng-click='logout()')
-            i.icon-logout
             |  Logout
 
         li: button.close(ng-click='shutdown()', ng-if='offline'): i.icon-cross
