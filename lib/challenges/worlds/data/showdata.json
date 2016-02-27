@@ -1,6 +1,6 @@
 {
-    "id": "getdata",
-    "title": "Get data",
+    "id": "showdata",
+    "title": "Show data",
     "description": "Learn how to ask the Internet for informations",
     "code": "",
     "startAt": 2,
