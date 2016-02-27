@@ -25,6 +25,7 @@
     "coffee-script": "~1.7.x",
     "color": "^0.7.3",
     "deep-equal": "^1.0.0",
+    "es6-promise": "^3.1.2",
     "express": "^4.10.5",
     "griddy": "0.0.x",
     "gulp": "~3.5.x",
@@ -44,7 +45,8 @@
     "partialify": "^3.1.1",
     "play-audio": "^0.1.0",
     "throttle-debounce": "^0.1.1",
-    "tiny-lr": "0.0.9"
+    "tiny-lr": "0.0.9",
+    "whatwg-fetch": "^0.11.0"
   },
   "devDependencies": {
     "mocha": "2.3.x",

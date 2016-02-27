@@ -264,5 +264,20 @@
             }
 
         ]
+    },
+    {
+        "label"    : "Data",
+        "icon"     : "data",
+        "commands" : [
+            {
+                "call"        : "getWeather",
+                "unlockedAt"  : 999,
+                "description" : "Get a city's current weather",
+                "args"        : [
+                    [ "city", "string", "The city", true ]
+                ],
+                "defaults": [ "london" ]
+            }
+        ]
     }
 ]
