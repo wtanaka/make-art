@@ -9,18 +9,6 @@
             "css_class": "basic-challenges",
             "share_strategy": "last_only",
             "type": "normal"
-
-        },
-        {
-            "id": "basic",
-            "name": "Basic",
-            "description": "This is a first set of challenges which will make you started with Make-Art",
-            "cover": "world_covers/basic.png",
-            "world_path": "worlds/basic",
-            "css_class": "basic-challenges",
-            "share_strategy": "last_only",
-            "type": "normal"
-
         },
         {
             "id": "medium",

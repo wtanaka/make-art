@@ -1,0 +1,25 @@
+{
+    "id": "getdata",
+    "title": "Get data",
+    "description": "Learn how to ask the Internet for informations",
+    "code": "",
+    "startAt": 2,
+    "steps": [
+        {
+            "hint": "First we will get London's current weather from the Internet - **type** `weather = getWeather 'london'`",
+            "solution": "weather = getWeather 'london'"
+        },
+        {
+            "hint": "Now we can see the weather - in a new line **type** `dump weather`",
+            "solution": "dump weather"
+        },
+        {
+            "hint": "Finally we draw the sun, we use the circle command followed by the size we want the circle to be - in a new line **type** `circle 150`",
+            "solution": "circle 150"
+        }
+    ],
+    "completion_text": "Well done! It's a bright and sunny day, now change the number next to circle and see what happens",
+    "cover": "potatoes.gif",
+    "video": "/assets/video/FunWithFlagsEp1.mp4",
+    "trigger": "none"
+}
