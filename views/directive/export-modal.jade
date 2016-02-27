@@ -1,7 +1,7 @@
 .modal-overlay(ng-if='open'): .modal-inner.export-menu
 
     button.close(ng-click='close()') &times;
-    h2.center {{ action === 'share' ? 'save to gallery' : 'save drawing' }}
+    h2.center {{ action === 'share' ? 'Publish Your App' : 'save drawing' }}
 
     .row
 
@@ -18,7 +18,7 @@
                 .buttons.center
                     button.button-success(type='submit', ng-disabled='exportForm.$invalid', ng-class='{ "disabled" : exportForm.$invalid }', ng-if='!loading')
                         i(ng-class='"icon-" + action')
-                        |  Save
+                        |  Publish
 
                     button.button-success.skip(ng-if='optional && !loading', ng-click='skipSharing()') Skip
                     
