@@ -1,11 +1,7 @@
 {
     "challenges": [
         "./getdata",
-        "./swissflag",
-        "./stare",
-        "./smiley",
-        "./baloon",
-        "./stickman"
-
+        "./readdata",
+        "./showdata"
     ]
 }
