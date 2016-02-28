@@ -1,5 +1,38 @@
 [
     {
+        "label"    : "Data",
+        "icon"     : "stats-dots",
+        "commands" : [
+            {
+                "call"        : "weather = getWeather",
+                "unlockedAt"  : 999,
+                "description" : "Get a city's current weather",
+                "args"        : [
+                    [ "city", "string", "The city", true ]
+                ],
+                "defaults": [ "london" ]
+            },
+            {
+                "call"        : "dump",
+                "unlockedAt"  : 999,
+                "description" : "Print the contents of a data object",
+                "args"        : [
+                    [ "object", "object", "Data to display", true ]
+                ],
+                "defaults": [ ]
+            },
+            {
+                "call"        : "dumpJSON",
+                "unlockedAt"  : 999,
+                "description" : "Print the contents of a JSON data object",
+                "args"        : [
+                    [ "object", "object", "JSON data to display", true ]
+                ],
+                "defaults": [ ]
+            }
+        ]
+    },
+    {
         "label"    : "Shapes",
         "icon"     : "shapes",
         "commands" : [
@@ -266,18 +299,38 @@
         ]
     },
     {
-        "label"    : "Data",
-        "icon"     : "data",
+        "label"    : "Emojis",
+        "icon"     : "smile",
         "commands" : [
             {
-                "call"        : "getWeather",
+                "call"        : "text '&#128512;'",
                 "unlockedAt"  : 999,
-                "description" : "Get a city's current weather",
-                "args"        : [
-                    [ "city", "string", "The city", true ]
-                ],
-                "defaults": [ "london" ]
+                "description" : "Smile emoji",
+                "args"        : [],
+                "defaults": [ ]
+            },
+            {
+                "call"        : "text '&#128521;'",
+                "unlockedAt"  : 999,
+                "description" : "Wink emoji",
+                "args"        : [],
+                "defaults": [ ]
+            },
+            {
+                "call"        : "text '&#128543;'",
+                "unlockedAt"  : 999,
+                "description" : "Worried emoji",
+                "args"        : [],
+                "defaults": [ ]
+            },
+            {
+                "call"        : "text '&#9730;'",
+                "unlockedAt"  : 999,
+                "description" : "Umbrella emoji",
+                "args"        : [],
+                "defaults": [ ]
             }
+
         ]
     }
 ]
