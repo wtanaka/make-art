@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?9v3uet');
-    src:    url('fonts/icomoon.eot?9v3uet#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?9v3uet') format('truetype'),
-        url('fonts/icomoon.woff?9v3uet') format('woff'),
-        url('fonts/icomoon.svg?9v3uet#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?lwnfuh');
+    src:    url('fonts/icomoon.eot?lwnfuh#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?lwnfuh') format('truetype'),
+        url('fonts/icomoon.woff?lwnfuh') format('woff'),
+        url('fonts/icomoon.svg?lwnfuh#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -149,5 +149,26 @@
 }
 .icon-mouse-pointer:before {
     content: "\e624";
+}
+.icon-stats-dots:before {
+    content: "\e905";
+}
+.icon-cloud:before {
+    content: "\e906";
+}
+.icon-cloud-download:before {
+    content: "\e907";
+}
+.icon-cloud-upload:before {
+    content: "\e908";
+}
+.icon-sphere:before {
+    content: "\e909";
+}
+.icon-earth:before {
+    content: "\e90a";
+}
+.icon-smile:before {
+    content: "\e90b";
 }
 
