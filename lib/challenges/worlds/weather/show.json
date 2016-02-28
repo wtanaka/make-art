@@ -6,7 +6,7 @@
     "startAt": 2,
     "steps": [
         {
-            "hint": "Let’s get the weather with **type** `get 'weather', location`",
+            "hint": "Let’s get the weather with **type** `weather = get 'weather', location`",
             "solution": "weather = get 'weather', location"
         },
         {
@@ -19,7 +19,7 @@
         },
         {
             "hint": "Next, we’ll write the text. Part of the text should be the same all the time, but we also want it to *vary* some of the time, so we’ll use the `location` variable. **Type** `text 'Wind speed in ' + location`",
-            "solution": "text 'Wind speed in ' + location"
+            "solution": "text \\'Wind speed in \\' \\+ location"
         },
         {
             "hint": "Now lets draw the speed, it should appear just below the current text. Lets move into position with `move 0, 120`",
@@ -31,8 +31,8 @@
         },
         {
             "hint": "Again, what we want to appear will change all the time, so we’ll use text from the data, and combine it with text that always stays the same. **Type** `text weather.wind.speed + 'mph'`",
-            "solution": "text weather.wind.speed + 'mph'"
+            "solution": "text weather.wind.speed \\+ \\'mph\\'"
         }
     ],
-    "completion_text": "Amazing! Change the location to see how the wind is doing around the world."
+    "completion_text": "Amazing! Change the location to see wind speeds around the world."
 }
