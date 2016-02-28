@@ -22,7 +22,7 @@
             h4.hint(ng-bind-html='hint | markdown', ng-if='hint')
 
         .inner(ng-if='completed && !fatherDay')
-            h2.center
+            h2.center(ng-if='!next')
                 | Remix This App
             .completion
                 .text
