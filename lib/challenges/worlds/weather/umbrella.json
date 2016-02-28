@@ -1,7 +1,7 @@
 {
-    "id": "baloon",
-    "title": "Blue Balloon",
-    "cover": "potatoes.gif",
+    "id": "umbrella",
+    "title": "Do I need an umbrella?",
+    "cover": "umbrella.gif",
     "description": "Draw a balloon floating in the air using polygons!",
     "startAt": 2,
     "steps": [

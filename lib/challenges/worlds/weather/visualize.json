@@ -1,42 +1,42 @@
 {
-    "id": "baloon",
-    "title": "Blue Balloon",
+    "id": "wind",
+    "title": "Wind particle simulator",
     "cover": "potatoes.gif",
-    "description": "Draw a balloon floating in the air using polygons!",
+    "description": "Make a wind particle simulator that changes with the wind speed.",
     "startAt": 2,
     "steps": [
         {
-            "hint": "Set the color to blue - **type** `color blue`",
-            "solution": "color blue"
+            "hint": "Let’s get the weather with **type** `get 'weather', location`",
+            "solution": "weather = get 'weather', location"
         },
         {
-            "hint": "Set the stroke to 0, to avoid drawing lines",
-            "solution": "stroke 0"
+            "hint": "We're going write some of the data we just got onto the screen of our app. Let’s use `font 30`.",
+            "solution": "font 30"
         },
         {
-            "hint": "Draw a circle with a size of 100",
-            "solution": "circle 100"
+            "hint": "The text should also be easy to read, so we’ll make it bold with `bold true`",
+            "solution": "bold true"
         },
         {
-            "hint": "Move down by 100 - **type** `move 0, 100`",
-            "solution": "move 0, 100"
+            "hint": "Next, we’ll write the text. Part of the text should be the same all the time, but we also want it to *vary* some of the time, so we’ll use the `location` variable. **Type** `text 'Wind speed in ' + location`",
+            "solution": "text 'Wind speed in ' + location"
         },
         {
-            "hint": "Draw the knot - **type** `polygon 15, 15, -15, 15`",
-            "solution": "polygon 15, 15, -15, 15"
+            "hint": "Now lets draw the speed, it should appear just below the current text. Lets move into position with `move 0, 120`",
+            "solution": "move 0, 120"
         },
         {
-            "hint": "Move down a little more - **type** `move 0, 15`",
-            "solution": "move 0, 15"
+            "hint": "The speed should be big, so we’ll set it with `font 100`",
+            "solution": "font 100"
         },
         {
-            "hint": "Choose a thick black stroke - **type** `stroke black, 5`",
-            "solution": "stroke black, 5"
+            "hint": "Again, what we want to appear will change all the time, so we’ll use text from the data, and combine it with text that always stays the same. **Type** `text weather.wind.speed + 'mph'`",
+            "solution": "text weather.wind.speed + 'mph'"
         },
         {
-            "hint": "Draw the line of the balloon thread - **type** `line 0, 200`",
-            "solution": "line 0, 200"
+            "hint": "Great! You have the basics. Lets step it up a level with a cool background. **Type** `createWind weather.wind.speed, weather.wind.direction`",
+            "solution": "createWind weather.wind.speed, weather.wind.direction"
         }
     ],
-    "completion_text": "Awesome balloon! Why not change the color before moving on?"
+    "completion_text": "Amazing! Change the location to see how the wind is doing around the world. The particles fly around changing with the speed of the wind. To see things get really crazy, replace `weather.wind.speed` with a big number!"
 }
