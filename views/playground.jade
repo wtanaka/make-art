@@ -1,8 +1,10 @@
 .page-width: .workspace
 
     .workspace-header(ng-show='remix')
-        .inner
-            | Bla bla bla
+        .inner(style='text-align: center')
+            h2(ng-if='!next')
+                | Remix This App
+            | Make this app your own by remixing the code below! Play with the variables, add a new piece using the tabs on the left, and make it personal. 
 
     .workspace-body: .row
 
