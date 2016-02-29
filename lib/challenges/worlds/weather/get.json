@@ -11,7 +11,7 @@
             "solution": "data = get 'weather', location"
         },
         {
-            "hint": "The `data` variable we just made has all of the information we need stored in it. To see what's inside, **type** `dump data`",
+            "hint": "The 'data' variable we just made has all of the information we need stored in it. To see what's inside, **type** `dump data`",
             "solution": "dump data"
         }
     ],
