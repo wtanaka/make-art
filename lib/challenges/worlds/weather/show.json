@@ -1,7 +1,7 @@
 {
     "id": "show",
     "title": "Show the data",
-    "cover": "potatoes.gif",
+    "cover": "show.png",
     "description": "Show the data",
     "startAt": 2,
 	"trigger": 1,

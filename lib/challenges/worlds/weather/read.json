@@ -1,7 +1,7 @@
 {
     "id": "read",
     "title": "Read the data",
-    "cover": "read.gif",
+    "cover": "read.png",
     "description": "Read the Data",
     "startAt": 2,
 	"trigger": 1,
@@ -15,6 +15,6 @@
             "solution": "dumpJSON data"
         }
     ],
-    "completion_text": "Isn't this starting to make a lot more sense? The data you are grabbing might have a lot of strange-looking symbols in it, but they are just there to help the computer read it! But with a bit of learning you too can read and use this data.",
+    "completion_text": "Put your current location in. Isn't this starting to make a lot more sense? The data you are grabbing might have a lot of strange-looking symbols in it, but they are just there to help the computer read it! But with a bit of learning you too can read and use this data.",
 	"code" : "data = get 'weather', location\ndump data"
 }
