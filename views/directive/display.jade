@@ -37,11 +37,11 @@
         //    |  Facebook
         
 
-        a.action.action-share(ng-if='mode === "run-app"', ng-click='remix()')
+        a.action.action-share(ng-if='mode === "run-app"', ng-click='remix()', ng-class='{ floatright: mode === "run-app" }')
             i.icon-share
             |  Remix
 
-        p.powered-kano(ng-if='mode === "run-app"')
+        a.powered-kano(href='http://apps.kano.me', ng-if='mode === "run-app"')
             | Powered by Kano
 
         a.action.action-save(ng-if='mode === "playground"', ng-click='save()')
