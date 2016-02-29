@@ -4,6 +4,7 @@
     "cover": "read.gif",
     "description": "Read the Data",
     "startAt": 2,
+	"trigger": 1,
     "steps": [
         {
             "hint": "Dumping the data shows us how the computer sees the data, but we need to turn it into something humans can read and use. The computer is using a language called 'JSON'. Think of 'JSON' as nice little shipping container you can use to send data anywhere. Change the second line to say `dumpJSON data`.",

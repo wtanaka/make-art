@@ -4,6 +4,7 @@
     "cover": "potatoes.gif",
     "description": "Show the data",
     "startAt": 2,
+	"trigger": 1,
     "steps": [
         {
             "hint": "Let’s get the weather with **type** `weather = get 'weather', location`",
