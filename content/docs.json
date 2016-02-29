@@ -4,7 +4,7 @@
         "icon"     : "stats-dots",
         "commands" : [
             {
-                "call"        : "weather = getWeather",
+                "call"        : "weather = get 'weather',",
                 "unlockedAt"  : 999,
                 "description" : "Get a city's current weather",
                 "args"        : [
@@ -12,6 +12,15 @@
                 ],
                 "defaults": [ "london" ]
             },
+            // {
+            //     "call"        : "twitter = get 'twitterStats',",
+            //     "unlockedAt"  : 999,
+            //     "description" : "Get a Twitter user's data",
+            //     "args"        : [
+            //         [ "username", "string", "username", true ]
+            //     ],
+            //     "defaults": [ "teamkano" ]
+            // },
             {
                 "call"        : "dump",
                 "unlockedAt"  : 999,
