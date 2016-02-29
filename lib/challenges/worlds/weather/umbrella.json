@@ -31,7 +31,7 @@
             "solution": "if weather.condition.text is 'Rain'"
         },
         {
-            "hint": "If it is raining, then we want to tell the user with text and an emoji. Add the emoji by copying and pasting here: `then text 'YES ☔️'`",
+            "hint": "If it is raining, then we want to tell the user with text and an emoji. Add the emoji by copying and pasting here: `text 'YES ☔️'`",
             "solution": "    text 'YES ☔️'"
         },
         {
