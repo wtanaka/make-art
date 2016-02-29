@@ -4,9 +4,10 @@
     "cover": "umbrella.gif",
     "description": "Draw a balloon floating in the air using polygons!",
     "startAt": 2,
+	"trigger": 1,
     "steps": [
         {
-            "hint": "Let’s get the weather with **type** `get 'weather', location`",
+            "hint": "Let’s get the weather with **type** `weather = get 'weather', location`",
             "solution": "weather = get 'weather', location"
         },
         {
@@ -15,7 +16,7 @@
         },
         {
             "hint": "Write your text. **Type** `text 'DO I NEED AN UMBRELLA NOW?'`",
-            "solution": "text 'DO I NEED AN UMBRELLA NOW?'"
+            "solution": "text \\'DO I NEED AN UMBRELLA NOW\\?\\'"
         },
         {
             "hint": "Now move down to get into position for the answer with `move 0, 150`",
@@ -30,12 +31,24 @@
             "solution": "if weather.condition.text is 'Raining'"
         },
         {
-            "hint": "If it is raining, then we want to tell the user yes. We'll tell them with text and some emoji. Add the emoji using the emoji panel on the left. **Type** `then text 'YES ☔️''",
+            "hint": "If it is raining, then we want to tell the user yes. We'll tell them with text and some emoji. Add the emoji using the emoji panel on the left. **Type** `then text 'YES ☔️''`",
             "solution": "then text 'YES ☔️'"
         },
         {
-            "hint": "If it is not raining, we will just write different text. **Type** `else text 'NO 😎'",
+            "hint": "If it is not raining, we will just write different text. **Type** `else text 'NO 😎'`",
             "solution": "else text 'NO 😎'"
+        },
+        {
+            "hint": "We can put a little bit more information down at the bottom of the screen. **Type** `move 0, 130`",
+            "solution": "move 0, 130"
+        },
+        {
+            "hint": "It shouldn't be the focus of the app, so let’s bring down the font size. **Type** `font 20`",
+            "solution": "font 20"
+        },
+        {
+            "hint": "Put the temperature and condition in with **Type** `text weather.condition.temp + 'F and ' + weather.condition.text`",
+            "solution": "text weather.condition.temp \\+ \\'F and \\' \\+ weather.condition.text"
         }
     ],
     "completion_text": "Amazing, what other tools can you make with data?"

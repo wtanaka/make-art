@@ -4,6 +4,7 @@
     "cover": "potatoes.gif",
     "description": "Make a wind particle simulator that changes with the wind speed.",
     "startAt": 2,
+	"trigger": 1,
     "steps": [
         {
             "hint": "Let’s get the weather with **type** `weather = get 'weather', location`",
@@ -34,9 +35,10 @@
             "solution": "text weather.wind.speed \\+ \\'mph\\'"
         },
         {
-            "hint": "Great! You have the basics. Lets step it up a level with a cool background. **Type** `createWind weather.wind.speed, weather.wind.direction`",
+            "hint": "Lets step your weather app up a level with a cool background. **Type** `createWind weather.wind.speed, weather.wind.direction`",
             "solution": "createWind weather.wind.speed, weather.wind.direction"
         }
     ],
-    "completion_text": "Amazing! Change the location to see how the wind is doing around the world. The particles fly around changing with the speed of the wind. To see things get really crazy, replace `weather.wind.speed` with a big number!"
+    "completion_text": "Amazing! Change the location to see how the wind is doing around the world. The particles fly around changing with the speed of the wind. To see things get really crazy, replace `weather.wind.speed` with a big number!",
+	"code": "weather = get 'weather', location\nfont 30\nbold true\ntext 'Wind speed in ' + location\nmove 0, 120\nfont 100\ntext weather.wind.speed + 'mph'"
 }
