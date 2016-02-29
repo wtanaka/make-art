@@ -7,11 +7,11 @@
 	"trigger": 1,
     "steps": [
         {
-            "hint": "Let’s get the weather with **type** `weather = get 'weather', location`",
+            "hint": "We can build a useful tool using data that will tell us if we need an umbrella before we go out. If it is raining, it will tell us to bring an umbrella. Let’s get the weather by **typing** `weather = get 'weather', location`",
             "solution": "weather = get 'weather', location"
         },
         {
-            "hint": "Move up 50 to get into position for your question. **Type** `move 0, -50`",
+            "hint": "Move up 50 to get into position for writing your question. **Type** `move 0, -50`",
             "solution": "move 0, -50"
         },
         {
@@ -19,7 +19,7 @@
             "solution": "text \\'DO I NEED AN UMBRELLA NOW\\?\\'"
         },
         {
-            "hint": "Now move down to get into position for the answer with `move 0, 150`",
+            "hint": "Now move down to get into position for writing the answer with `move 0, 150`",
             "solution": "move 0, 150"
         },
         {
@@ -27,15 +27,15 @@
             "solution": "font 110"
         },
         {
-            "hint": "If it is raining, we want to tell the user to grab an umbrella, but if it isn't raining, they're all good. To do this, we're going to use the `if` word. **Type** `if weather.condition.text is 'Raining'`",
-            "solution": "if weather.condition.text is 'Raining'"
+            "hint": "If it is raining, we want to tell the user to grab an umbrella. To do this, we're going to use the `if` word. **Type** `if weather.condition.text is 'Rain'`",
+            "solution": "if weather.condition.text is 'Rain'"
         },
         {
-            "hint": "If it is raining, then we want to tell the user yes. We'll tell them with text and some emoji. Add the emoji using the emoji panel on the left. **Type** `then text 'YES ☔️''`",
-            "solution": "then text 'YES ☔️'"
+            "hint": "If it is raining, then we want to tell the user with text and an emoji. Add the emoji by copying and pasting here: `then text 'YES ☔️'`",
+            "solution": "    text 'YES ☔️'"
         },
         {
-            "hint": "If it is not raining, we will just write different text. **Type** `else text 'NO 😎'`",
+            "hint": "If it is not raining, we will just write different text. Press `BACKSPACE` to get out of the if block, and then copy and paste: `else text 'NO 😎'`. (Make sure there isn't any space in front of it).",
             "solution": "else text 'NO 😎'"
         },
         {

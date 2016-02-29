@@ -7,11 +7,11 @@
 	"trigger": 1,
     "steps": [
         {
-            "hint": "Let’s get the weather with **type** `weather = get 'weather', location`",
+            "hint": "Now we are going to put the data to use. We’ll print it out in a way anyone can read it. Start off by getting the weather with `weather = get 'weather', location`",
             "solution": "weather = get 'weather', location"
         },
         {
-            "hint": "We're going write some of the data we just got onto the screen of our app. Let’s use `font 30`.",
+            "hint": "We're going write some of the data we just got onto the screen of our app. Let’s set the font first with `font 30`.",
             "solution": "font 30"
         },
         {
@@ -19,11 +19,11 @@
             "solution": "bold true"
         },
         {
-            "hint": "Next, we’ll write the text. Part of the text should be the same all the time, but we also want it to *vary* some of the time, so we’ll use the `location` variable. **Type** `text 'Wind speed in ' + location`",
+            "hint": "Next, we’ll write the text. Part of the text will always say the same thing, but part of it should *vary* depending on the location, so we’ll use text, combined with a variable. **Type** `text 'Wind speed in ' + location`",
             "solution": "text \\'Wind speed in \\' \\+ location"
         },
         {
-            "hint": "Now lets draw the speed, it should appear just below the current text. Lets move into position with `move 0, 120`",
+            "hint": "Now lets draw the wind speed, it should appear just below the current text. Lets move into position with `move 0, 120`",
             "solution": "move 0, 120"
         },
         {
@@ -31,7 +31,7 @@
             "solution": "font 100"
         },
         {
-            "hint": "Again, what we want to appear will change all the time, so we’ll use text from the data, and combine it with text that always stays the same. **Type** `text weather.wind.speed + 'mph'`",
+            "hint": "Again, what we want to appear will change depending on the wind, so we’ll use text from the data. **Type** `text weather.wind.speed + 'mph'`",
             "solution": "text weather.wind.speed \\+ \\'mph\\'"
         }
     ],

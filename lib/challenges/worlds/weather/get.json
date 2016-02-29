@@ -7,7 +7,7 @@
 	"trigger": 1,
     "steps": [
         {
-            "hint": "Lets connect to weather stations around the world with the `get` command with the location input bar we have provided. **Type** `data = get 'weather', location`",
+            "hint": "Welcome to Make Apps. You’re going to make real apps that use real data from servers around the world. Get started by **typing** `data = get 'weather', location`",
             "solution": "data = get 'weather', location"
         },
         {

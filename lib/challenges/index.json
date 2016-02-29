@@ -2,7 +2,7 @@
     "worlds": [
         {
             "id": "weather",
-            "name": "Weather App",
+            "name": "Weather Station App",
             "description": "Discover data while making your own interactive weather app",
             "cover": "world_covers/weather.png",
             "world_path": "worlds/weather",
@@ -12,7 +12,7 @@
         },
         {
             "id": "needyplant",
-            "name": "Needy Plant",
+            "name": "Coming Soon: Needy Plant",
             "description": "Discover data while making your own interactive weather app",
             "cover": "world_covers/needyplant.png",
             "world_path": "worlds/project3",
@@ -23,7 +23,7 @@
         },
         {
             "id": "snowbro",
-            "name": "Pow Pow on the Mow Mow",
+            "name": "Coming Soon: Pow Pow on the Mow Mow",
             "description": "Discover data while making your own interactive weather app",
             "cover": "world_covers/snowbro.png",
             "world_path": "worlds/project5",
@@ -34,7 +34,7 @@
         },
         {
             "id": "celltower",
-            "name": "Cell Tower Hacker",
+            "name": "Coming Soon: Cell Tower Hacker",
             "description": "Discover data while making your own interactive weather app",
             "cover": "world_covers/celltower.png",
             "world_path": "worlds/project2",
@@ -45,7 +45,7 @@
         },
         {
             "id": "pushthebutton",
-            "name": "Push the Button",
+            "name": "Coming Soon: Push the Button",
             "description": "Discover data while making your own interactive weather app",
             "cover": "world_covers/pushthebutton.png",
             "world_path": "worlds/project4",
@@ -56,7 +56,7 @@
         },
         {
             "id": "umbrellatime",
-            "name": "Umbrella Time App",
+            "name": "Coming Soon: Umbrella Time App",
             "description": "Discover data while making your own interactive weather app",
             "cover": "world_covers/umbrella.png",
             "world_path": "worlds/project5",
