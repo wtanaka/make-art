@@ -51,5 +51,13 @@
             "solution": "text weather.condition.temp \\+ \\'F and \\' \\+ weather.condition.text"
         }
     ],
-    "completion_text": "Amazing, what other tools can you make with data?"
+    "gallery": {
+        "cover_path": "/assets/challenges/images/weatherremixes/",
+        "remixes": [
+            "weather1.png",
+            "weather2.png",
+            "weather3.png"
+        ]
+    },
+    "completion_text": "Well done! This app answers a question based on data. But this is only one of an infinite number of apps you could build with this simple template. You could change it to look for snow, warn you if the temperature is low, or make it rain cats and dogs!"
 }
