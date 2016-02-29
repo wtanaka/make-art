@@ -53,7 +53,7 @@ div(ng-show='tab === "code"')
     .editor-wrap(ng-class='{ "has-title": !!title }')
     
         div.triggerSelector
-            select(ng-model='selectedTrigger', ng-options="trigger as (trigger.name + ', run this code') for trigger in triggers")
+            select(ng-model='selectedTrigger', ng-options="trigger as (trigger.name + ', run this code:') for trigger in triggers")
 
         .editor-area(editor, ng-class='{ disabled: !editable }')
 
