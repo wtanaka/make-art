@@ -1,11 +1,14 @@
 .app-width: .workspace
     .app-container
       h1(ng-show='!iframe', style='margin-top: 20px;') {{ item.title }}
+      img.spinner(src="/assets/layout/spinner.gif", ng-if="loading")
       display(
           source='appCode',
           workspace,
           mode='mode',
           shareid="id",
           trigger="trigger",
-          ng-style="{'max-width': iframe ? '100%': '500px'}"
+          ng-style="{'max-width': iframe ? '100%': '500px'}",
+          ng-if="!loading"
           )
+    
