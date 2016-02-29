@@ -1,7 +1,7 @@
 {
     "id": "wind",
     "title": "Wind particle simulator",
-    "cover": "potatoes.gif",
+    "cover": "wind.gif",
     "description": "Make a wind particle simulator that changes with the wind speed.",
     "startAt": 2,
 	"trigger": 1,
