@@ -27,7 +27,7 @@
             "solution": "font 110"
         },
         {
-            "hint": "If it is raining, we want to tell the user to grab an umbrella. To do this, we're going to use the `if` word. **Type** `if weather.condition.text is 'Rain'`",
+            "hint": "If it is raining, we want to tell the user to grab an umbrella. To do this, we're going to use the if word. **Type** `if weather.condition.text is 'Rain'`",
             "solution": "if weather.condition.text is 'Rain'"
         },
         {
