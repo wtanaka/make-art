@@ -4,6 +4,9 @@ html(lang='en',  xmlns:ng="http://angularjs.org")
         //- Generic
         meta(charset='UTF-8')
         link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+        
+        //- SEO
+        meta(name="google-site-verification" content="OCQroE3v9jKgCFFNBnVeejsgn4Qb5IvNbr_oUyoU-Tw")
 
         //- Mobile options
         meta(name='apple-mobile-web-app-capable', content='yes')
@@ -19,7 +22,13 @@ html(lang='en',  xmlns:ng="http://angularjs.org")
         link(href='/css/main.css', rel='stylesheet', type='text/css')
 
         script(type="text/javascript").
-            var dataLayer = [];
+            window.dataLayer = [];
+            window.dataLayer.push({
+                originalLocation: document.location.protocol + '//' +
+                                  document.location.hostname +
+                                  document.location.pathname +
+                                  document.location.search
+            });
             (function() {
                 window.XMLHttpRequest = window.XMLHttpRequest || (function() {
                     return new window.ActiveXObject("Microsoft.XMLHTTP");
