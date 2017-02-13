@@ -14,7 +14,7 @@
             "solution": "stroke 0"
         },
         {
-            "hint": "Configura el color de dibujo a amarillo",
+            "hint": "Configura el color a amarillo",
             "solution": "color yellow"
         },
         {
@@ -31,7 +31,7 @@
             "solution": "    circle 5"
         },
         {
-            "hint": "Ahora para dibujar el planeta asegúrate de estar fuera del ciclo y **escribe** `color purple`",
+            "hint": "Ahora para dibujar el planeta asegúrate de estar fuera del ciclo (es decir, sin sangría de línea) y **escribe** `color purple`",
             "solution": "color purple"
         },
         {
@@ -43,11 +43,11 @@
             "solution": "circle 170"
         },
         {
-            "hint": "Configura el color de dibujo a blanco",
+            "hint": "Configura el color a blanco",
             "solution": "color white"
         },
         {
-            "hint": "Elige un trazo fino y blanco - en una nueva línea, **escribe** `stroke white, 5`",
+            "hint": "Elige un trazo grueso y blanco - en una nueva línea, **escribe** `stroke white, 5`",
             "solution": "stroke white, 5"
         },
         {

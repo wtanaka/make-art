@@ -10,11 +10,11 @@
             "solution": "stroke gray, 3"
         },
         {
-            "hint": "Configura el color para poder ver a través - **escribe** `color null`",
+            "hint": "Configura el color a transparente para poder ver a través - **escribe** `color null`",
             "solution": "color null"
         },
         {
-            "hint": "Vamos a dibujar 32 círculos todos de una vez, necesitamos abrir un ciclo - **escribe** `for i in [ 0 .. 32 ]`",
+            "hint": "Vamos a dibujar 32 círculos todos de una vez, necesitamos abrir un ciclo con un nuevo comando - **escribe** `for i in [ 0 .. 32 ]`",
             "solution": "for i in [ 0..32 ]"
         },
         {
@@ -23,6 +23,6 @@
             "validate": "    circle 10 *\\* *i"
         }
     ],
-    "completion_text": "¡Genial! Dentro de los ciclos repetimos los códigos de bits (¡nos ahorramos escribir!)",
+    "completion_text": "¡Genial! Los ciclos nos permiten repetir secciones de código (¡nos ahorramos escribir!)",
     "cover": "shrinking.png"
 }

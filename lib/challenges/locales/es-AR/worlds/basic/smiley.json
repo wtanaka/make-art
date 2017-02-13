@@ -9,11 +9,11 @@
             "solution": "color yellow"
         },
         {
-            "hint": "Elige un trazo fino y negro - **escribe** `stroke black, 20`",
+            "hint": "Elige un trazo grueso y negro - **escribe** `stroke black, 20`",
             "solution": "stroke black, 20"
         },
         {
-            "hint": "Dibuja un círculo de un tamaño de 200",
+            "hint": "Dibuja un círculo de un tamaño de 200. Recuerda, círculo en inglés es circle",
             "solution": "circle 200"
         },
         {
@@ -37,11 +37,11 @@
             "solution": "circle 20"
         },
         {
-            "hint": "Muévete al centro y hacia abajo - en una nueva línea, **escribe** `moveTo 250, 270`",
+            "hint": "Muévete al centro y hacia abajo - En una nueva línea, **escribe** `moveTo 250, 270`",
             "solution": "moveTo 250, 270"
         },
         {
-            "hint": "Un arco es la mitad de un círculo, podemos dibujarlo como si fuera la boca - **escribe** `arc 100, 1, 2`",
+            "hint": "Un arco es la mitad de un círculo, y en inglés se dice arc. Podemos dibujarlo como si fuera la boca - **escribe** `arc 100, 1, 2`",
             "solution": "arc 100, 1, 2"
         }
     ],

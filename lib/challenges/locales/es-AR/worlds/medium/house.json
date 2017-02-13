@@ -6,11 +6,11 @@
     "startAt": 1,
     "steps": [
         {
-            "hint": "¡Empecemos por el cielo! Configura el fondo a azul",
+            "hint": "¡Empecemos por el cielo! Configura el color del fondo a azul, usando background",
             "solution": "background blue"
         },
         {
-            "hint": "Ahora configura el trazo a 0",
+            "hint": "Ahora configura el trazo a 0 usando stroke",
             "solution": "stroke 0"
         },
         {
@@ -18,7 +18,7 @@
             "solution": "move -150, -50"
         },
         {
-            "hint": "Ahora configura el color de dibujo a beige",
+            "hint": "Ahora configura el color a beige ¡se dice igual en inglés!",
             "solution": "color beige"
         },
         {
@@ -30,7 +30,7 @@
             "solution": "move 150, -100"
         },
         {
-            "hint": "Configura el color de dibujo a rojo oscuro para el techo",
+            "hint": "Configura el color a rojo oscuro, o darkred en inglés, para el techo",
             "solution": "color darkred"
         },
         {
@@ -42,11 +42,11 @@
             "solution": "move -250, 300"
         },
         {
-            "hint": "Ahora configura el color de dibujo a verde para hacer el césped",
+            "hint": "Ahora configura el color a verde para hacer el césped",
             "solution": "color green"
         },
         {
-            "hint": "Dibuja un rectángulo para el césped con las siguientes medidas 500, 100",
+            "hint": "Dibuja un rectángulo para el césped con las siguientes medidas 500, 100 usando `rectangle`",
             "solution": "rectangle 500, 100"
         },
         {
@@ -54,7 +54,7 @@
             "solution": "move 220, -80"
         },
         {
-            "hint": "Ahora configura el color de dibujo a marrón para hacer la puerta de madera",
+            "hint": "Ahora configura el color a marrón para hacer la puerta de madera",
             "solution": "color brown"
         },
         {
@@ -62,15 +62,15 @@
             "solution": "rectangle 60, 80"
         },
         {
-            "hint": "Configura el color de dibujo a 'aqua' para las ventanas",
+            "hint": "Configura el color a 'aqua' para las ventanas",
             "solution": "color aqua"
         },
         {
-            "hint": "Muévete hacia la izquieda y arriba, **escribe** `move -80, -80`",
+            "hint": "Muévete hacia la izquierda y arriba, **escribe** `move -80, -80`",
             "solution": "move -80, -80"
         },
         {
-            "hint": "Dibuja un cuadrado de 50 de tamaño,**escribe** `square 50`",
+            "hint": "Dibuja un cuadrado de 50 de tamaño, **escribe** `square 50`",
             "solution": "square 50"
         },
         {
@@ -82,6 +82,6 @@
             "solution": "square 50"
         }
     ],
-    "completion_text": "¡Construiste una increíble casa usando códigos de programación!",
+    "completion_text": "¡Construiste una increíble casa usando código!",
     "cover": "house.png"
 }
